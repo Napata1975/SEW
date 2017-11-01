@@ -119,7 +119,7 @@ namespace ConsoleApplication1
                 if (text.Length == 0)
                 {
 
-                    if (wordsSorted[i].Length > 10)
+                    //if (wordsSorted[i].Length > 10)
                     {
                         outPut = wordsSorted[i];
                         if (matchedList.Contains(outPut) == false)
