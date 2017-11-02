@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -87,19 +87,19 @@ namespace ConsoleApplication1
                                 startIndex = text.IndexOf(esEnd);
                             }
                         }
-                        if (text.Contains(plural) && wordsSortedAscending.Contains(plural) && wordsSortedAscending[j] !=plural)                            
-                            {
+                        if (text.Contains(plural) && wordsSortedAscending.Contains(plural) && wordsSortedAscending[j] != plural)
+                        {
 
-                                int startIndex = text.IndexOf(plural);
-                                while (startIndex > -1)
-                                {
-                                    wanted = string.Empty;
-                                    wanted = text.Replace(plural, string.Empty);
-                                    text = string.Empty;
-                                    text = wanted;
-                                    startIndex = text.IndexOf(plural);
-                                }
+                            int startIndex = text.IndexOf(plural);
+                            while (startIndex > -1)
+                            {
+                                wanted = string.Empty;
+                                wanted = text.Replace(plural, string.Empty);
+                                text = string.Empty;
+                                text = wanted;
+                                startIndex = text.IndexOf(plural);
                             }
+                        }
                         if (text.Contains(wd) && wordsSortedAscending.Contains(wd))
                         {
 
